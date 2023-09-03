@@ -4,16 +4,15 @@
 1. [Description](##Description)
 2. [Datasets](##Datasets)
 3. [Usage](##Usage)
-4. [Installation and Setup](##Installation-and-Setup)
-5. [Citation](##Citation)
-6. [Contact](##Contact)
+4. [Citation](##Citation)
+5. [Contact](##Contact)
 
 ## Description
 This dataset is derived from an experiment involving university students. Initially, they answered questions about school life and finance. Later, they crafted fictitious narratives about chosen topics and then provided truthful narratives about another topic.
 
 **Structure:**
 1. Initial Questions: General questions about school life and finance.
-2. Fictitious Narratives: Fabricated stories about topics include major, club experiences, internships, travel experiences, and personal hobbies.
+2. Fictitious Narratives: Fabricated stories about topics including major, club experiences, internships, travel experiences, and personal hobbies.
 3. Truthful Narratives: Honest stories about another chosen topic.
 
 **Recording:**
@@ -36,12 +35,12 @@ Transcripts of statements were made using the CapCut ASR system, retaining fille
 - facenet_128: Extract visual features by detecting faces using RetinaFace, and transforming into 128-dimensional vectors using a pretrained FaceNet model.
 
 **Audio:**
-- mfcc: Sample the audio features and transform into MFCC (Mel-frequency cepstral coefficients).
-- mfcc_0.2: Sample the audio features and compute the average MFCCs for every 0.2 second in the video.
+- mfcc: Sample the audio features and transform them into MFCC (Mel-frequency cepstral coefficients).
+- mfcc_0.2: Sample the audio features and compute the average MFCCs for every 0.2 seconds in the video.
 
 **Transcription:**
-- srt_files: Convert the video to transciption by ASR system as SRT (SubRip Text). The description of SRT structure is below.
-- chinese_bert_perword: Tokenize transcriptions using the Chinese BERT tokenizer, processing the text word-by-word. These tokens are then passed through CKIP Lab's pretrained Chinese BERT model, producing a 768-dimensional vector for each word.
+- srt_files: Convert the video to transcription by ASR system as SRT (SubRip Text). The description of SRT structure is below.
+- chinese_bert_perword: Tokenize transcriptions using the Chinese BERT tokenizer, processing the text word-by-word. These tokens are passed through CKIP Lab's pretrained Chinese BERT model, producing a 768-dimensional vector for each word.
 - chinese_bert_persentence: As above, but it's done sentence-by-sentence.
 
 **SRT Structure**
@@ -109,8 +108,6 @@ embeddings = text2embed(textual_data)
 ```
 
 Remember to ensure you have all the necessary dependencies installed, and adjust the provided paths in the examples to the actual paths of your data.
-
-## Licenses and Credits
 
 ## Citation
 
