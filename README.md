@@ -58,6 +58,7 @@ This repository provides utility functions to process and extract features from 
 To read vectors from text files and get a list of vectors for each file:
 ```python
 from functions import read_txt
+
 file_paths = ['txt_path_1.txt', 'txt_path_2.txt']
 vectors = read_txt(file_paths)
 ```
@@ -67,6 +68,7 @@ vectors = read_txt(file_paths)
 To extract transcriptions from subtitle files:
 ```python
 from functions import read_srt
+
 srt_paths = ['srt_path_1.srt', 'srt_path_2.srt']
 transcriptions = read_srt(srt_paths)
 ```
@@ -76,6 +78,7 @@ transcriptions = read_srt(srt_paths)
 To convert a list of video file paths into their corresponding face embeddings:
 ```python
 from functions import video2facenet
+
 video_paths = ['video_path_1.mp4', 'video_path_2.mp4']
 face_embeddings = video2facenet(video_paths)
 ```
@@ -85,6 +88,7 @@ face_embeddings = video2facenet(video_paths)
 To extract Mel-frequency cepstral coefficients (MFCCs) from videos:
 ```python
 from functions import video2mfccs
+
 video_paths = ['video_path_1.mp4', 'video_path_2.mp4']
 mfcc_vectors = video2mfccs(video_paths)
 ```
@@ -94,6 +98,7 @@ mfcc_vectors = video2mfccs(video_paths)
 To compute average MFCCs for specific audio durations within videos:
 ```python
 from functions import video2mfccs_mean
+
 video_paths = ['video_path_1.mp4', 'video_path_2.mp4']
 mfcc_mean_vectors = video2mfccs_mean(video_paths, period=0.2)
 ```
@@ -103,6 +108,7 @@ mfcc_mean_vectors = video2mfccs_mean(video_paths, period=0.2)
 To convert lists of Chinese textual data into embeddings:
 ```python
 from functions import text2embed
+
 textual_data = [['你好世界'], ['學習中文']]
 embeddings = text2embed(textual_data)
 ```
