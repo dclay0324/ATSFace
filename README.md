@@ -117,4 +117,6 @@ Remember to ensure you have all the necessary dependencies installed, and adjust
 
 ## Citation
 
+Shun-Wen Hsiao and Cheng-Yuan Sun, "LoRA-like Calibration for Multimodal Deception Detection using ATSFace Data," arXiv:2309.01383 [cs.CV], Sept. 2023. https://arxiv.org/abs/2309.01383
+
 ## Contact
